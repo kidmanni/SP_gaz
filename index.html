@@ -10,9 +10,7 @@
     <link rel="stylesheet" href="./style/styles.css">
     <link rel="stylesheet" href="./style/tailwind.css">
     <!-- js -->
-    <!-- <script src="./js/jquery.js"></script> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+    <script src="./js/jquery.js"></script>
     <script src="./js/paroller.js"></script>
     <script src="./js/app.js"></script>
 </head>
@@ -25,16 +23,24 @@
             </div>
             <ul>
                 <li>
-                    <img src="./img/Menu.png" alt="menu" class="menu-icon">
+                    <img src="./img/Menu.png" alt="menu" class="menu-icon cursor-pointer">
                 </li>
             </ul>
             <nav
                 class="menu-nav hidden absolute top-20 left-0 z-0 text-white text-center w-full h-screen backdrop-filter backdrop-blur">
-                <ul>
-                    <li>option 1</li>
-                    <li>option 2</li>
-                    <li>option 3</li>
-                    <li>option 4</li>
+                <ul class="h-screen">
+                    <li>
+                        <a href="#" class="inline-block p-4">option 1</a>
+                    </li>
+                    <li>
+                        <a href="#" class="inline-block p-4">option 2</a>
+                    </li>
+                    <li>
+                        <a href="#" class="inline-block p-4">option 3</a>
+                    </li>
+                    <li>
+                        <a href="#" class="inline-block p-4">option 4</a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -435,7 +441,7 @@
                 </div>
             </div>
             <div class="w-2/5 parallax-container" data-paroller-factor="-0.1" data-paroller-type="foreground"
-            data-paroller-direction="horizontal">
+                data-paroller-direction="horizontal">
                 <img src="./img/SPgaz_tr_transparent.png" alt="spgaz" class="w-auto">
             </div>
         </section>
