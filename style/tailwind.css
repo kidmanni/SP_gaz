@@ -17,6 +17,7 @@
 .font-montserrat {
     font-family: 'Montserrat', sans-serif;
 }
+
 .container-truck {
     display:flex;
     width: 100%;
@@ -49,4 +50,12 @@
     .font-hero-big {
         font-size: 144px;
     }
+}
+@media (min-width: 1280px) {
+  .font-hero-big {
+    font-size: 294px;
+}
+.border-hero {
+  border-left: 28px solid #008BD2;  
+ }
 }

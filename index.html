@@ -28,7 +28,7 @@
             </ul>
             <nav
                 class="menu-nav hidden absolute top-20 left-0 z-0 text-white text-right w-full h-screen backdrop-filter backdrop-blur md:pr-5">
-                <ul class="h-screen">
+                <ul class="h-screen xl:flex">
                     <li>
                         <a href="#" class="inline-block p-4">Главная</a>
                     </li>
@@ -67,14 +67,18 @@
         </div>
     </header>
     <main class="font-montserrat |">
-        <section class="text-white pt-32"
+        <section class=" text-white pt-32"
             style="background-image: url(./img/metal-wine-storage-tanks-winery\ 1.png); background-repeat: no-repeat; background-size: cover; background-position: center;">
             <div class="text-right mx-auto w-11/12 2xl:w-9/12 2xl:py-52">
                 <p class="text-xl font-medium w-52 ml-auto md:w-full ">Поставщик сжиженного газа</p>
                 <div class="border-blue-custom | border-b-8 w-16 ml-auto pt-10 "></div>
-                <h1 class="font-hero-big | uppercase font-extrabold mt-10">SP GAZ</h1>
+                <div class="flex justify-between">
+                    <div class="border-hero relative right-14"></div>
+                    <h1 class="font-hero-big | uppercase font-extrabold mt-10">SP GAZ</h1>
+                </div>
+                
                 <div
-                    class="text-blue-custom | flex justify-between  items-center mx-auto w-40 mt-64 pb-32 md:m-0 md:ml-auto md:pt-44 2xl:ml-auto">
+                    class="text-blue-custom | flex justify-between  items-center mx-auto w-40 mt-64 pb-32 md:m-0 md:ml-auto md:pt-44 xl:text-xl xl:w-48">
                     <p class="">
                         Прайс-лист
                     </p>
@@ -82,11 +86,11 @@
                 </div>
             </div>
         </section>
-        <section class="text-black-custom | mx-auto mt-10 2xl:w-9/12 2xl:mt-32 ">
-            <div class="flex flex-col 2xl:flex-row">
-                <div class="w-11/12 mx-auto 2xl:w-6/12">
-                    <h2 class="text-4xl font-medium 2xl:text-5xl">О нас</h2>
-                    <div class="text-sm py-10 2xl:w-9/12 2xl:pt-16">
+        <section class="text-black-custom | mx-auto mt-10 xl:w-11/12 2xl:mt-32 ">
+            <div class="flex flex-col xl:flex-row xl:mt-32">
+                <div class="w-11/12 mx-auto xl:w-8/12">
+                    <h2 class="text-4xl font-medium xl:text-5xl">О нас</h2>
+                    <div class="text-sm py-10 xl:w-9/12 xl:pt-16">
                         <p class="pb-2">
                             Компания ООО "СП ГАЗ" занимается реализацией оптом сжиженного углеводородный газ марок СПБТ,
                             ПБА,
@@ -105,55 +109,56 @@
                 </div>
                 <div class="mx-auto">
                     <div class="">
-                        <img class="md:hidden" src="./img/close-up-metallic-wine-barrels-winery 1.png" alt="">
-                        <img class="hidden md:block" src="./img/close-up-metallic-wine-barrels-winery-new.png"
+                        <img class="md:hidden xl:block" src="./img/close-up-metallic-wine-barrels-winery 1.png" alt="">
+                        <img class="hidden md:block xl:hidden" src="./img/close-up-metallic-wine-barrels-winery-new.png"
                             alt="barrels close-up">
                     </div>
-                    <div class="bg-black-custom | text-white bottom-28 2xl:w-11/12">
-                        <ul class="grid py-16 w-11/12 mx-auto md:grid md:grid-cols-2 md:pb-6 2xl:px-28 2xl:grid-cols-2 2xl:gap-36">
-                            <li class="flex flex-col justify-between">
-                                <h3 class="font-medium text-xl pb-5 w-56 2xl:pb-2 ">Сравните цены на газ пропан у нас
-                                </h3>
-                                <p class="text-gray-custom | hidden text-xs pb-3 w-8/12">Наши менеджеры с радостью
-                                    ответят
-                                    на
-                                    все
-                                    интересующие Вас вопросы!
-                                </p>
-                                <div class="text-blue-custom | flex justify-between w-32 text-xl">
-                                    <h3>Сравнить</h3>
-                                    <img class="w-4" src="./img/right-arrow-1.png" alt="arrow">
-                                </div>
-                            </li>
-                            <li class="flex flex-col justify-between ">
-                                <h3 class="font-medium py-5 md:text-xl 2xl:pb-2">Звоните</h3>
-                                <p class="text-gray-custom | hidden text-sm pb-3 w-8/12">Наши менеджеры с радостью
-                                    ответят
-                                    на
-                                    все
-                                    интересующие Вас вопросы!
-                                </p>
-                                <div class="text-blue-custom | flex justify-between w-40">
-                                    <h3>+38 067 517 28 28</h3>
-                                    <img class="w-4" src="./img/right-arrow-1.png" alt="arrow">
-                                </div>
-                                <p class="text-gray-custom | md:hidden pt-5 w-72 text-sm">Наши менеджеры с радостью ответят на все
-                                    интересующие Вас вопросы!</p>
-                            </li>
-                        </ul>
-                        <p class="text-gray-custom | hidden md:block text-xs pb-16 w-11/12 md:mx-auto">Наши менеджеры с радостью
+               
+                </div>
+            </div>
+            <div class="bg-black-custom | w-11/12 mx-auto text-white bottom-28 xl:relative xl:bottom-12 xl:right-10">
+                <ul class="grid py-16 w-11/12 mx-auto md:grid md:grid-cols-2 md:pb-6 xl:px-5 xl:gap-10 xl:py-10 2xl:px-28 xl:grid-cols-2 2xl:gap-36">
+                    <li class="flex flex-col justify-between">
+                        <h3 class="font-medium text-xl pb-5 w-56 xl:pb-2 ">Сравните цены на газ пропан у нас
+                        </h3>
+                        <p class="text-gray-custom | hidden xl:block text-xs pb-3 w-8/12">Наши менеджеры с радостью
                             ответят
                             на
                             все
                             интересующие Вас вопросы!
                         </p>
-                    </div>
-                </div>
+                        <div class="text-blue-custom | flex justify-between w-32 text-xl">
+                            <h3>Сравнить</h3>
+                            <img class="w-4" src="./img/right-arrow-1.png" alt="arrow">
+                        </div>
+                    </li>
+                    <li class="flex flex-col justify-between ">
+                        <h3 class="font-medium py-5 md:text-xl xl:pb-2">Звоните</h3>
+                        <p class="text-gray-custom | hidden xl:block text-sm pb-3 w-8/12">Наши менеджеры с радостью
+                            ответят
+                            на
+                            все
+                            интересующие Вас вопросы!
+                        </p>
+                        <div class="text-blue-custom | flex justify-between w-40">
+                            <h3>+38 067 517 28 28</h3>
+                            <img class="w-4" src="./img/right-arrow-1.png" alt="arrow">
+                        </div>
+                        <p class="text-gray-custom | md:hidden pt-5 w-72 text-sm">Наши менеджеры с радостью ответят на все
+                            интересующие Вас вопросы!</p>
+                    </li>
+                </ul>
+                <p class="text-gray-custom | hidden md:block text-xs pb-16 w-11/12 md:mx-auto xl:hidden">Наши менеджеры с радостью
+                    ответят
+                    на
+                    все
+                    интересующие Вас вопросы!
+                </p>
             </div>
         </section>
         <section class="font-montserrat | mt-10 mx-auto w-11/12 xl:mt-24 2xl:w-9/12 ">
-            <h2 class="text-4xl font-medium 2xl:text-5xl mb-16">Поставщики</h2>
-            <div class="grid grid-cols-2 g-16 text-center 2xl:grid-cols-4">
+            <h2 class="text-4xl font-medium xl:text-5xl mb-16">Поставщики</h2>
+            <div class="grid grid-cols-2 g-16 text-center xl:grid-cols-4">
                 <div class="flex flex-col justify-between items-center my-10">
                     <img class="w-10/12" src="./img/logo/logo60-1.png" alt="logo">
                     <p class="text-gray-custom | py-5 text-xs font-bold">ТОО “Атирау”</p>
@@ -190,24 +195,24 @@
         </section>
         <section class=" font-montserrat bg-black-custom |  text-white xl:mt-24 ">
             <div class="mx-auto pb-28 w-11/12 2xl:w-9/12 ">
-                <div class="py-20 flex flex-col justify-between font-medium md:flex-row 2xl:items-center">
-                    <h2 class="text-4xl pb-5 2xl:text-5xl">Для кого</h2>
-                    <p class="text-blue-custom | text-xl 2xl:text-2xl underline">Доставка по всей Украине</p>
+                <div class="py-20 flex flex-col justify-between font-medium md:flex-row xl:items-center">
+                    <h2 class="text-4xl pb-5 xl:text-5xl">Для кого</h2>
+                    <p class="text-blue-custom | text-xl xl:text-2xl underline">Доставка по всей Украине</p>
                 </div>
-                <div class="grid md:grid-cols-2 2xl:grid-cols-4">
-                    <div class=" flex flex-col justify-between mx-5 md:border-r md:border-blue-custom md:m-0 md:border-b md:pb-10">
-                        <div class="border-blue-custom  | hidden:border-r">
-                            <img class="2xl:mx-auto" src="./img/gas-station.png" alt="gas">
+                <ul class="grid md:grid-cols-2 xl:grid-cols-4">
+                    <li class=" flex flex-col justify-between mx-5 md:border-r md:border-blue-custom md:m-0 md:border-b md:pb-10 xl:border-0">
+                        <div class="border-blue-custom  | xl:border-r">
+                            <img class="xl:mx-auto" src="./img/gas-station.png" alt="gas">
                         </div>
                         <h3 class="text-blue-custom | font-semibold pt-5">АГЗС</h3>
                         <p class="text-sm pt-5">
                             Продажа сжиженного газа (LPG) оптом для дальнейшей розничной реализации.
                         </p>
                         <div class="border-blue-custom | border-b w-44 my-10 md:hidden"></div>
-                    </div>
-                    <div class="flex flex-col justify-between mx-5 md: border-b md:border-blue-custom md:m-0 md:pl-10 md:pb-5">
-                        <div class="border-blue-custom  | hidden:border-r">
-                            <img class="2xl:mx-auto" src="./img/gas-truck 1.png" alt="truck">
+                    </li>
+                    <li class="flex flex-col justify-between mx-5 md:border-b  md:border-blue-custom md:m-0 md:pl-10 md:pb-5 xl:border-0">
+                        <div class="border-blue-custom  | xl:border-r">
+                            <img class="xl:mx-auto" src="./img/gas-truck 1.png" alt="truck">
                         </div>
 
                         <h3 class="text-blue-custom | font-semibold pt-5">Автотранспортные предприятия со своими
@@ -217,10 +222,10 @@
                             существенно сокращает издержки.
                         </p>
                         <div class="border-blue-custom | border-b w-44 my-10 md:hidden"></div>
-                    </div>
-                    <div class="flex flex-col justify-between mx-5 md:border-r md:border-blue-custom md:m-0 md:pt-10 md:pr-10">
-                        <div class="border-blue-custom  | hidden:border-r">
-                            <img class="2xl:mx-auto" src="./img/grain (1) 1.png" alt="gas">
+                    </li>
+                    <li class="flex flex-col justify-between mx-5 md:border-r md:border-blue-custom md:m-0 md:pt-10 md:pr-10 xl:border-0">
+                        <div class="border-blue-custom  | xl:border-r">
+                            <img class="xl:mx-auto" src="./img/grain (1) 1.png" alt="gas">
                         </div>
 
                         <h3 class="text-blue-custom | font-semibold pt-5">Газоснабжение зерносушилки</h3>
@@ -229,18 +234,18 @@
                             стоимость сушки на сжиженном газе меньше, к тому же он более экологичный.
                         </p>
                         <div class="border-blue-custom | border-b w-44 my-10 md:hidden"></div>
-                    </div>
-                    <div class="flex flex-col justify-between mx-5 md:pt-10 md:pl-10">
+                    </li>
+                    <li class="flex flex-col justify-between mx-5 md:pt-10 md:pl-10 xl:items-center">
                         <div class="border-blue-custom  | hidden:border-r">
-                            <img class="2xl:mx-auto" src="./img/house 1.png" alt="house-icon">
+                            <img class="xl:mx-auto" src="./img/house 1.png" alt="house-icon">
                         </div>
                         <h3 class="text-blue-custom | font-semibold pt-5">Газоснабжение дома</h3>
                         <p class="text-sm pt-5">
                             Реализуем газ для автономной системы отопления дома.
                         </p>
                         <div class="border-blue-custom | border-b w-44 mt-10 md:hidden"></div>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
             <div class="mx-auto w-11/12 2xl:w-9/12 pb-32">
                 <h2 class="text-4xl 2xl:text-5xl">Доставка осуществляется</h2>
@@ -265,7 +270,13 @@
                             <img src="./img/right-arrow-1.png" alt="arrow">
                             <p class="ml-4">Реализация с ГНС</p>
                         </div>
-
+                    </li>
+                    <li class="hidden mt-5 md:grid md:col-span-2 2xl:absolute 2xl:left-2/4">
+                        <img class="flex items-center w-11/12" src="./img/factory-2915737_1920 1.png" alt="gas">
+                        <div class="flex text-xl mt-4">
+                            <img src="./img/right-arrow-1.png" alt="arrow">
+                            <p class="ml-4">Автогазовозами</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -273,11 +284,11 @@
 
         <section class="font-montserrat | mt-32 mb-20 w-11/12 mx-auto 2xl:w-9/12">
             <div class="flex flex-col justify-between 2xl:items-center">
-                <h2 class="text-4xl font-medium 2xl:text-5xl">Оцените ряд преимуществ</h2>
+                <h2 class="text-4xl font-medium md:text-5xl">Оцените ряд преимуществ</h2>
                 <p class="text-blue-custom | text-2xl underline mt-5 ">работая с SP GAZ</p>
             </div>
 
-            <ul class="mt-16 mx-auto text-center grid grid-cols-2 2xl:grid-cols-6">
+            <ul class="mt-16 mx-auto text-center grid grid-cols-2 md:grid-cols-3 2xl:grid-cols-6">
                 <li class="flex flex-col items-center justify-between mb-7">
                     <img class="" src="./img/circular-refresh-arrows.png" alt="icon">
                     <p class="mt-10">Бесперебойная <br>
@@ -312,7 +323,7 @@
         </section>
         <section class="bg-black-custom font-montserrat | ">
             <div class="mx-auto text-white w-11/12 2xl:pt-32 2xl:w-9/12">
-                <h2 class="font-medium text-4xl pt-16 2xl:text-5xl">Цены</h2>
+                <h2 class="font-medium text-4xl pt-16 md:text-5xl">Цены</h2>
                 <p class="2xl:w-9/12 2xl:ml-32 pt-10">
                     В зависимости от особенностей и объемов поставки, в индивидуальном порядке устанавливается цена
                     тонны/литра сжиженного газа.
@@ -480,15 +491,15 @@
                 data-paroller-direction="horizontal">
                 <img src="./img/SPgaz_tr_transparent.png" alt="spgaz" class="w-auto">
             </div>
-            <div class="container-truck | relative bottom-48 md:bottom-64 lg:bottom-80">
+            <div class="container-truck | relative bottom-32 md:bottom-64 lg:bottom-80">
                 <img src="./img/SPgaz_tr_transparent.png" alt="">
                 
               </div> 
         </section>
 
         <section class="font-montserrat | mt-32 mb-32 mx-auto w-11/12 2xl:w-9/12">
-            <h2 class="mb-16 pt-10 font-medium text-4xl 2xl:text-5xl">Партнеры</h2>
-            <ul class="grid grid-cols-2">
+            <h2 class="mb-16 pt-10 font-medium text-4xl md:text-5xl">Партнеры</h2>
+            <ul class="grid grid-cols-2 mx-auto md:grid-cols-3">
                 <li class="flex items-center">
                     <img src="./img/logo/7-1.png" alt="logo">
                 </li>
@@ -511,12 +522,12 @@
         </section>
         <section class="font-montserrat | text-white"
             style="background-image: url(./img/metal-wine-storage-tanks-winery\ 1.png); background-repeat: no-repeat; background-size: cover;">
-            <h2 class="pt-16  mx-auto font-medium text-4xl w-11/12 2xl:text-5xl 2xl:w-9/12">Контакты</h2>
+            <h2 class="pt-16  mx-auto font-medium text-4xl w-11/12 md:text-5xl 2xl:w-9/12">Контакты</h2>
             <div class="flex flex-col justify-between mx-auto w-11/12 2xl:w-9/12">
 
                 <div class="mt-16 2xl:ml-10">
-                    <ul class="flex flex-col justify-between 2xl:text-xl">
-                        <li class="flex justify-between items-center">
+                    <ul class="flex flex-col justify-between md:grid md:grid-cols-2 2xl:text-xl">
+                        <li class="flex justify-between items-center md:row-span-2">
                             <img src="./img/map-marker-alt-solid.png" alt="map">
                             <p class="w-96 ml-10">
                                 ОО “СП ГАЗ” <br>
@@ -524,13 +535,13 @@
                                 г. Одесса, ул. Маразлиевская, 1/20
                             </p>
                         </li>
-                        <li class="flex justify-between items-center mt-10">
+                        <li class="flex justify-between items-center mt-10 md:ml-10">
                             <img src="./img/envelope-solid.png" alt="mail">
                             <p class="w-96 ml-10">
                                 office@spgaz.com.ua
                             </p>
                         </li>
-                        <li class="flex justify-between items-center mt-10">
+                        <li class="flex justify-between items-center mt-10 md:ml-10">
                             <img src="./img/phone-alt-solid.png" alt="phone">
                             <p class="w-96 ml-10">
                                 +38 067 517 28 28
@@ -620,8 +631,8 @@
         </section>
     </main>
     <footer class="bg-black-custom text-gray-custom | py-16">
-        <div class="flex flex-col justify-between mx-auto 2xl:w-9/12">
-            <div class="flex justify-between items-start w-11/12 mx-auto">
+        <div class="flex flex-col justify-between mx-auto md:w-11/12 2xl:w-9/12 md:flex-row">
+            <div class="flex justify-between items-start w-11/12 mx-auto md:flex-col md:w-48">
                 <div class="">
                     <img src="./img/logo-gray.png" alt="logo">
                     <p class="my-5 text-sm w-44">Закажите обратный звонок и мы вам перезвоним!</p>
@@ -639,7 +650,7 @@
                     </a>
                 </div>
             </div>
-            <div class="grid grid-cols-2 w-11/12 mx-auto text-sm">
+            <div class="grid grid-cols-2 md:grid-cols-3 w-11/12 mx-auto text-sm">
                 <ul>
                     <li class="mt-2">Главная</li>
                     <li class="mt-2">O нас</li>
