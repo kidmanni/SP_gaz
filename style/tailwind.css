@@ -3,16 +3,50 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap');
 
+
 .font-hero-big {
     font-size: 86px;
-    font-weight: ;
 }
 .font-montserrat {
     font-family: 'Montserrat', sans-serif;
+}
+.container-truck {
+    display:flex;
+    width: 100%;
+    animation: move 8s linear infinite;
+    
+  }
+  .container-truck img{
+    width: 100%;
+  }
+  
+  @keyframes move {
+    from {
+      left: -50%;
+    }
+    to {
+      left: 100%;
+    }
+  }
+  
+  @keyframes moveFirst {
+    from {
+      left: 50%;
+    }
+    to {
+      left: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .font-hero-big {
+        font-size: 144px;
+    }
 }
