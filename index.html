@@ -13,6 +13,7 @@
     <script src="./js/jquery.js"></script>
     <script src="./js/paroller.js"></script>
     <script src="./js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 </head>
 
 <body class="overflow-x-hidden">
@@ -367,7 +368,21 @@
                 </thead>
                 <tbody class="">
                     <tr class="border-black-custom | border-4">
-                        <td class="border-black-custom | border-2 py-3 pl-2">Киевская</td>
+                        <td class="border-black-custom | border-2 py-3 pl-2 " x-data="{ dropdownOpen: false }">
+                            <h1 @click="dropdownOpen = !dropdownOpen" class="cursor-pointer flex items-center gap-2">
+                                Киевская
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </h1>
+                            <ul x-show="dropdownOpen" class="p-2">
+                                <li>option 1</li>
+                                <li>option 2</li>
+                                <li>option 3</li>
+                            </ul>
+                        </td>
                         <td class="border-black-custom | border-2 py-3 pl-2">DDP Киев</td>
                         <td class="border-black-custom | border-2 py-3 text-center font-semibold">20 200</td>
                     </tr>
