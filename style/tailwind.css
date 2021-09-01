@@ -4,12 +4,6 @@
 @tailwind utilities;
 
 
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap'); */
-
 /* fonts */
 @import url(./fonts.css);
 
@@ -18,7 +12,7 @@
 /* // ================================================= */
 .container-car {
   display: flex;
-  width: 40%;
+  width: 80%;
   left: -30%;
   position: relative;
   animation: move 8s linear infinite;
@@ -27,7 +21,7 @@
 .container-car img {
   position: absolute;
   width: 100%;
-  top: -265px;            
+  top: -70px;            
 }
 
 @-webkit-keyframes move {
@@ -40,7 +34,7 @@
   }
 }
 .font-hero-big {
-    font-size: 86px;
+    font-size: 80px;
 }
 .font-montserrat {
     font-family: 'Montserrat', sans-serif;
@@ -49,12 +43,24 @@
     .font-hero-big {
         font-size: 144px;
     }
+    .border-hero-blue {
+      border-left: 20px solid #008BD2;
+    }
+    .container-car {
+      top: -150px;
+    }
 }
 @media (min-width: 1280px) {
   .font-hero-big {
     font-size: 294px;
 }
-.border-hero {
-  border-left: 28px solid #008BD2;  
- }
+  .container-car{
+    top: -265px;
+  }
+
+}
+@media (min-width: 1536px) {
+  .container-car {
+    top: -350px;
+  }
 }
