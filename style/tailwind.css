@@ -10,34 +10,15 @@
 /* // ================================================= */
 /* // * Animamation for truck */
 /* // ================================================= */
-.container-car {
-  display: flex;
-  width: 80%;
-  left: -30%;
-  position: relative;
-  animation: move 8s linear infinite;
-}
 
-.container-car img {
-  position: absolute;
-  width: 100%;
-  top: -70px;            
-}
-
-@-webkit-keyframes move {
-  from {
-      left: -50%;
-  }
-
-  to {
-      left: 100%;
-  }
-}
 .font-hero-big {
     font-size: 80px;
 }
 .font-montserrat {
     font-family: 'Montserrat', sans-serif;
+}
+.font-table{
+  font-size: 8px;
 }
 @media (min-width: 768px) {
     .font-hero-big {

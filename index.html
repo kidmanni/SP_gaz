@@ -280,7 +280,7 @@
                         </div>
                     </li>
                     <li class="xl:absolute xl:left-2/4 xl:ml-20 xl:top-96">
-                        <img class="flex items-center w-11/12 md:w-72 md:h-64 xl:h-full xl:w-full"
+                        <img class="flex items-center w-10/12 md:w-72 md:h-64 xl:h-full xl:w-full"
                             src="./img/tank-783495_1920 1.png" alt="tank">
                         <div class="flex text-xl mt-4">
                             <img src="./img/right-arrow-1.png" alt="arrow">
@@ -368,35 +368,37 @@
                 </thead>
                 <tbody class="md:text-base">
                     <tr class="border-black-custom | border-4">
-                        <td class="border-black-custom | border-2 py-3 pl-2 " x-data="{ dropdownOpen: false }">
-                            <h1 @click="dropdownOpen = !dropdownOpen" class="cursor-pointer flex items-center gap-2">
-                                Киевская
+                        <td class="border-black-custom | border-2 py-3 pl-2 ">
+                            <div class="flex justify-between">
+                                <h1 @click="dropdownOpen = !dropdownOpen" class="cursor-pointer flex items-center">
+                                    Киевская </h1>
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M19 9l-7 7-7-7" />
                                 </svg>
+                            </div>
+
+
                             </h1>
-                            <ul x-show="dropdownOpen" class="p-2">
-                                <li class="flex gap-1 my-1">
-                                    <span class="border-2 px-2 py-1">City1</span>
-                                    <span class="border-2 px-2 py-1">Shipping point</span>
-                                    <span class="border-2 px-2 py-1">Price</span>
-                                </li>
-                                <li class="flex gap-1 border-2 my-1 w-auto">
-                                    <span class="px-2 py-1">City2</span>
-                                    <span class="px-2 py-1">Shipping point</span>
-                                    <span class="px-2 py-1">Price</span>
-                                </li>
-                                <li class="flex gap-1 ">
-                                    <span class="border-t-2 border-b-2 px-2 py-1">City3</span>
-                                    <span class="border-t-2 border-b-2 px-2 py-1">Shipping point</span>
-                                    <span class="border-t-2 border-b-2 px-2 py-1">Price</span>
-                                </li>
-                            </ul>
-                        </td>
-                        <td class="border-black-custom | border-2 py-3 pl-2">DDP Киев</td>
-                        <td class="border-black-custom | border-2 py-3 text-center font-semibold">20 200</td>
+                    <tr class="bg-table-blue-custom border border-black-custom">
+                        <td class="px-2 py-1">Область отгрузки</td>
+                        <td class="px-2 py-1">Пункт отгрузки</td>
+                        <td class="px-2 py-1">Цена</td>
+                    </tr>
+                    <tr class="bg-table-blue-custom border border-black-custom">
+                        <td class="px-2 py-1">Область отгрузки</td>
+                        <td class="px-2 py-1">Пункт отгрузки</td>
+                        <td class="px-2 py-1">Цена</td>
+                    </tr>
+                    <tr class="bg-table-blue-custom border border-black-custom">
+                        <td class="px-2 py-1">Область отгрузки</td>
+                        <td class="px-2 py-1">Пункт отгрузки</td>
+                        <td class="px-2 py-1">Цена</td>
+                    </tr>
+                    </td>
+                    <td class="border-black-custom | border-2 py-3 pl-2">DDP Киев</td>
+                    <td class="border-black-custom | border-2 py-3 text-center font-semibold">20 200</td>
                     </tr>
                     <tr class="border-black-custom | border-4">
                         <td class="border-black-custom | border-2 py-3 pl-2">Винницкая</td>
@@ -529,13 +531,13 @@
             </div>
 
         </section>
-        <section class="absolute w-11/12">
+        <section class="absolute">
             <!-- <div class="container-car">
                 <img src="./img/SPgaz_tr_transparent.png" alt="spgaz" class="w-auto">
             </div> -->
-            <div class="w-3/5 relative bottom-16 xl:bottom-32 parallax-container " data-paroller-factor="-0.8"
+            <div class="w-11/12 relative bottom-16 xl:bottom-32 parallax-container " data-paroller-factor="-0.8"
                 data-paroller-type="foreground" data-paroller-direction="horizontal">
-                <img src="./img/SPgaz_tr_transparent-height.png" alt="spgaz" class="w-auto">
+                <img src="./img/SPgaz_tr_transparent-height.png" alt="spgaz" class="">
             </div>
         </section>
 
@@ -573,7 +575,7 @@
                             Контакты</h2>
                         <li class="flex justify-between self-start md:row-span-2">
                             <img class="self-center" src="./img/map-marker-alt-solid.png" alt="map">
-                            <p class="w-96 ml-10 xl:w-full">
+                            <p class="ml-10 sm:w-96 xl:w-full">
                                 ОО “СП ГАЗ” <br>
                                 Центральный офис
                                 г. Одесса, ул. Маразлиевская, 1/20
@@ -581,13 +583,13 @@
                         </li>
                         <li class="flex justify-between self-start mt-10 md:ml-10 md:mt-0 xl:ml-0 xl:mt-10">
                             <img class="self-center" src="./img/envelope-solid.png" alt="mail">
-                            <p class="w-96 ml-10 xl:w-full">
+                            <p class="ml-10 xl:w-full">
                                 office@spgaz.com.ua
                             </p>
                         </li>
                         <li class="flex justify-between self-start mt-10 md:ml-10 xl:ml-0">
                             <img class="self-senter" src="./img/phone-alt-solid.png" alt="phone">
-                            <p class="w-96 ml-10 xl:w-full">
+                            <p class="ml-10 xl:w-full">
                                 +38 067 517 28 28
                             </p>
                         </li>

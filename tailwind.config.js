@@ -10,7 +10,8 @@ module.exports = {
         "green-custom": "#3AAA35",
         "black-custom": "#29282A",
         "gray-custom": "#949296",
-        "light-gray-custom": "#E9E7EB"
+        "light-gray-custom": "#E9E7EB",
+        "table-blue-custom": "#B9E7FF"
 
       },
       fontFamily: {
