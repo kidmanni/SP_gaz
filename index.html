@@ -354,19 +354,19 @@
             </div>
             <table class="border-black-custom | mx-auto text-xs w-11/12 table-fixed bg-white border-2 2xl:w-7/12">
                 <thead class="bg-blue-custom border-black-custom | border-2 text-white font-medium">
-                    <tr>
-                        <th class="border-black-custom | border-2  w-5/12 py-5">
+                    <tr class="text-left md:text-base">
+                        <th class="border-black-custom | border-2 pl-2  w-5/12 py-5">
                             Область отгрузки
                         </th>
-                        <th class="border-black-custom | border-2 w-4/12">
+                        <th class="border-black-custom | border-2 pl-2 w-4/12">
                             Пункт отгрузки
                         </th>
-                        <th class="border-black-custom | border-2 w-3/12">
+                        <th class="border-black-custom | border-2 text-center w-3/12">
                             Доставка автотранс <br> портом СПБТ, грн/т
                         </th>
                     </tr>
                 </thead>
-                <tbody class="">
+                <tbody class="md:text-base">
                     <tr class="border-black-custom | border-4">
                         <td class="border-black-custom | border-2 py-3 pl-2 " x-data="{ dropdownOpen: false }">
                             <h1 @click="dropdownOpen = !dropdownOpen" class="cursor-pointer flex items-center gap-2">
@@ -508,7 +508,7 @@
                     Цены обновлены 01.07.2021
                 </p>
                 <a href="#contact"
-                    class="text-blue-custom | flex justify-between items-center w-56 mx-auto mt-16 pb-32 lg:pb-44">
+                    class="text-blue-custom | z-40 flex justify-between items-center w-56 mx-auto mt-16 pb-32 lg:pb-44">
                     <p class="text-xl">
                         Отправить заявку
                     </p>
@@ -517,13 +517,13 @@
             </div>
 
         </section>
-        <section>
+        <section class="">
             <!-- <div class="container-car">
                 <img src="./img/SPgaz_tr_transparent.png" alt="spgaz" class="w-auto">
             </div> -->
-            <div class="w-2/5 parallax-container" data-paroller-factor="-0.1" data-paroller-type="foreground"
+            <div class="w-3/5 border parallax-container " data-paroller-factor="-0.1" data-paroller-type="foreground"
                 data-paroller-direction="horizontal">
-                <img src="./img/SPgaz_tr_transparent.png" alt="spgaz" class="w-auto">
+                <img src="./img/SPgaz_tr_transparent-height.png" alt="spgaz" class="w-auto">
             </div>
         </section>
 
