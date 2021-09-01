@@ -352,7 +352,8 @@
                     Ниже представлены цены на СУГ, с которыми мы предлагаем Вам ознакомиться.
                 </p>
             </div>
-            <table class="border-black-custom | mx-auto text-xs w-11/12 table-fixed bg-white border-2 2xl:w-7/12">
+            <table class="border-black-custom | mx-auto text-xs w-11/12 table-fixed bg-white border-2 2xl:w-7/12"
+                x-data="{ dropdownOpen: false }">
                 <thead class="bg-blue-custom border-black-custom | border-2 text-white font-medium">
                     <tr class="text-left md:text-base">
                         <th class="border-black-custom | border-2 pl-2  w-5/12 py-5">
@@ -369,37 +370,43 @@
                 <tbody class="md:text-base">
                     <tr class="border-black-custom | border-4">
                         <td class="border-black-custom | border-2 py-3 pl-2 ">
-                            <div class="flex justify-between">
-                                <h1 @click="dropdownOpen = !dropdownOpen" class="cursor-pointer flex items-center">
-                                    Киевская </h1>
+                            <!-- dropdown dispatcher -->
+                            <div class="flex justify-between cursor-pointer" @click="dropdownOpen = !dropdownOpen">
+                                <h1>Киевская</h1>
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M19 9l-7 7-7-7" />
                                 </svg>
                             </div>
+                        </td>
 
-
-                            </h1>
-                    <tr class="bg-table-blue-custom border border-black-custom">
-                        <td class="px-2 py-1">Область отгрузки</td>
-                        <td class="px-2 py-1">Пункт отгрузки</td>
-                        <td class="px-2 py-1">Цена</td>
+                        <td class="border-black-custom | border-2 py-3 pl-2">DDP Киев</td>
+                        <td class="border-black-custom | border-2 py-3 text-center font-semibold">20 200</td>
                     </tr>
-                    <tr class="bg-table-blue-custom border border-black-custom">
-                        <td class="px-2 py-1">Область отгрузки</td>
-                        <td class="px-2 py-1">Пункт отгрузки</td>
-                        <td class="px-2 py-1">Цена</td>
+                    <!-- dropdown items -->
+                    <tr x-show="dropdownOpen">
+                        <td colspan="3">
+                            <table class="w-full">
+                                <tr class="bg-table-blue-custom border border-black-custom">
+                                    <td class="px-2 py-1">Область отгрузки</td>
+                                    <td class="px-2 py-1">Пункт отгрузки</td>
+                                    <td class="px-2 py-1">Цена</td>
+                                </tr>
+                                <tr class="bg-table-blue-custom border border-black-custom">
+                                    <td class="px-2 py-1">Область отгрузки</td>
+                                    <td class="px-2 py-1">Пункт отгрузки</td>
+                                    <td class="px-2 py-1">Цена</td>
+                                </tr>
+                                <tr class="bg-table-blue-custom border border-black-custom">
+                                    <td class="px-2 py-1">Область отгрузки</td>
+                                    <td class="px-2 py-1">Пункт отгрузки</td>
+                                    <td class="px-2 py-1">Цена</td>
+                                </tr>
+                            </table>
+                        </td>
                     </tr>
-                    <tr class="bg-table-blue-custom border border-black-custom">
-                        <td class="px-2 py-1">Область отгрузки</td>
-                        <td class="px-2 py-1">Пункт отгрузки</td>
-                        <td class="px-2 py-1">Цена</td>
-                    </tr>
-                    </td>
-                    <td class="border-black-custom | border-2 py-3 pl-2">DDP Киев</td>
-                    <td class="border-black-custom | border-2 py-3 text-center font-semibold">20 200</td>
-                    </tr>
+                    <!-- end dropdown items -->
                     <tr class="border-black-custom | border-4">
                         <td class="border-black-custom | border-2 py-3 pl-2">Винницкая</td>
                         <td class="border-black-custom | border-2 py-3 pl-2">DDP Винница</td>
